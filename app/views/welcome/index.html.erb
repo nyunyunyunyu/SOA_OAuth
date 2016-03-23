@@ -1,8 +1,27 @@
 <p id="notice"><%= notice %></p>
 
 <h1>I am a student of Tsinghua University. It is a website for my class homework.</h1>
+<p>点击
+  <a href="https://api.weibo.com/oauth2/authorize?client_id=1872990748&redirect_uri=http://itispxm.com/response&response_type=code">
+    log in
+  </a>
+  登录将信息录入
+</p>
 
-<a href="https://api.weibo.com/oauth2/authorize?client_id=1872990748&redirect_uri=http://itispxm.com/response&response_type=code">
-  log in
-</a>
+<p>
+提供的api，都是get方法，不需要参数
+<ul>
+  <li>
+    /users  返回所有注册用户。
+  </li>
+  <li>
+    /posts/:uid  返回用户的最近100条微博。
+  </li>
+  <li>
+    /emotion/:uid  返回用户心情，将会为[double, double]的形式，表示用户开心和不开心的概率，二者相加为1.
+  </li>
+  </ul>
+</p>
+
+
 
