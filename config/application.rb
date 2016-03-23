@@ -1,5 +1,5 @@
 require File.expand_path('../boot', __FILE__)
-
+require "rubygems"
 require "rails"
 # Pick the frameworks you want:
 require "active_model/railtie"
