@@ -5,6 +5,10 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
+  get 'response' => 'response#responseOAuth'
+  get 'users' => 'api#users'
+  get 'posts/:uid' => 'api#posts'
+  get 'emotion/:uid' => 'api#emotion'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
