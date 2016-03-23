@@ -1,6 +1,5 @@
 class ResponseController < ApplicationController
   def responseOAuth
-
     uri = URI.parse("https://api.weibo.com/oauth2/access_token")
     res = Net::HTTP.post_form(uri, :client_id => APP_KEY, :client_secret => APP_SECRET,
                               :grant_type => :authorization_code, :code => params[:code],

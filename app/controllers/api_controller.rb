@@ -1,4 +1,3 @@
-require "JSON"
 class ApiController < ApplicationController
   def users
     now = DateTime::now
