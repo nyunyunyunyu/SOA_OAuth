@@ -3,7 +3,7 @@ class ResponseController < ApplicationController
     uri = URI.parse("https://api.weibo.com/oauth2/access_token")
     res = Net::HTTP.post_form(uri, :client_id => APP_KEY, :client_secret => APP_SECRET,
                               :grant_type => :authorization_code, :code => params[:code],
-                              :redirect_uri => "http://itispxm.com/response&response_type=code")
+                              :redirect_uri => "http://nyunyunyunyu.com/response&response_type=code")
 
 
     return_dict = JSON.load(res.body)
